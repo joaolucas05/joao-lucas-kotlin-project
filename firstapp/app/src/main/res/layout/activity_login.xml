@@ -4,6 +4,150 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#170966"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="410dp"
+        android:layout_height="250dp"
+        android:background="#1A266B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@color/colorAccent"
+        tools:layout_editor_absoluteY="413dp" />
+
+    <ImageView
+        android:id="@+id/imgColorIconKey2"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="#02312C"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <ImageView
+        android:id="@+id/imgFundoPassword2"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        app:srcCompat="#83C2D1CF"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <ImageView
+        android:id="@+id/imgColorIconKey"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="#02312C"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <ImageView
+        android:id="@+id/imgFundoPassword"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        app:srcCompat="#83C2D1CF"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#F0FFFFFF"
+        android:textColorHighlight="#EDFFFFFF"
+        android:textColorHint="#E2FFFFFF"
+        android:textColorLink="#D5FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvSignIn" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:shadowColor="#EDFFFFFF"
+        android:textColor="#FCFFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#EBFFFFFF"
+        android:textColorLink="#E1FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Remember Me"
+        android:textColor="#D5FFFFFF"
+        android:textColorHighlight="#F8FFFFFF"
+        android:textColorHint="#CDFFFFFF"
+        android:textColorLink="#E8FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/txtPass"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderradius"
+        android:drawableBottom="@drawable/borderradius"
+        android:text="SIGN IN"
+        android:textColor="#F0FFFFFF"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="508dp" />
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/usericon" />
+
+    <TextView
+        android:id="@+id/txvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="SIGN IN"
+        android:textColor="#E7E0E0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAvatar" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/usericon"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="440dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
